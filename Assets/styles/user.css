@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+:root {
+  --custom-color: #0066ff;
+  --nature-color: #fff;
+  --zero-color: #000;
+}
+
+.backDrop {
+  background-color: var(--zero-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  overflow-y: scroll;
+}
+
+.signinCard,
+.loginCard {
+  width: 60%;
+  max-width: 37rem;
+  height: max-content;
+  padding: 1rem;
+}
+
+fieldset {
+  border: 4px solid var(--custom-color);
+  border-radius: 10px;
+  padding: 2rem 1.5rem 1rem;
+  width: inherit;
+}
+
+Legend {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.form-label {
+  font-size: 1.25rem;
+}
+
+.field-ctrl {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.form-control {
+  background: inherit;
+  border: none;
+  border-bottom: 2px solid var(--custom-color);
+  color: var(--custom-color);
+  font-size: 1.2rem;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.toggle-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toggleIcon,
+#toggleIcon2 {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.control {
+  padding: 1rem 0 0.5rem;
+}
+
+.primary-btn {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--custom-color);
+  border: none;
+  border-radius: 10px;
+  color: var(--nature-color);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: #fff;
+  color: #0066ff;
+}
+
+.return-nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#returnIcon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.have-account,
+.no-account {
+  font-size: 1.25rem;
+}
+
+#login,
+#create-account {
+  color: var(--custom-color);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .signinCard,
+  .loginCard {
+    width: 65%;
+  }
+
+  fieldset {
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  Legend {
+    font-size: 1.65rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+
+  #toggleIcon,
+  #toggleIcon2 {
+    width: 22px;
+    height: 22px;
+  }
+
+  .control {
+    padding: 0.5rem 0;
+  }
+
+  #returnIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .have-account,
+  .no-account {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .loginCard,
+  .signinCard {
+    width: 75%;
+  }
+
+  fieldset {
+    padding: 2rem 1rem 1rem;
+  }
+
+  legend {
+    font-size: 1.5rem;
+  }
+
+  .field-ctrl {
+    gap: 0.25rem;
+  }
+
+  #toggleIcon,
+  #toggleIcon2 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .control {
+    padding: 0;
+  }
+
+  .primary-btn {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--custom-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--nature-color);
+    cursor: pointer;
+  }
+
+  #returnIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .have-account,
+  .no-account {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .loginCard,
+  .signinCard {
+    width: 90%;
+  }
+
+  fieldset {
+    padding: 2rem 1rem 1rem;
+  }
+
+  legend {
+    font-size: 1.2rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    font-size: 0.75rem;
+  }
+
+  #toggleIcon,
+  #toggleIcon2 {
+    width: 15px;
+    height: 15px;
+  }
+
+  .primary-btn {
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+
+  #returnIcon {
+    width: 25px;
+    height: 25px;
+  }
+}

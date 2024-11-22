@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/styles/scanner.css" />
+    <title>Drugs Scanner</title>
+  </head>
+  <body>
+    <h1>Scan that drug here</h1>
+    <div id="reader" class="reader"></div>
+    <div style="text-align:center; margin-top: 20px">
+      <button id="startScanning">Start Scanning</button>
+      <button id="stopScanning" disabled>Stop Scanning</button>
+    </div>
+    <p id="result" style="text-align: center; margin-top: 20px">
+      Scan a QR code to see the result here.
+    </p>
+    <div class="table-container">
+      <h3>Drug's details:</h3>
+      <div id="displayFetchedItem"></div>
+    </div>
+    <script src="./Assets/scripts/qrcode.min.js"></script>
+    <script src="./Assets/scripts/axios.min.js"></script>
+    <script src="./Assets/scripts/scanner.js"></script>
+  </body>
+</html>

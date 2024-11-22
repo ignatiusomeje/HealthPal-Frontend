@@ -1,0 +1,32 @@
+:root {
+  --custom-color: #0066ff;
+  --nature-color: #fff;
+  --zero-color: #000;
+  --layer-color: rgba(0, 0, 0, 0.781);
+  --linear-grad: linear-gradient(#021c2b, #0066ff);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: var(--nature-color); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid var(--custom-color);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--custom-color);
+}

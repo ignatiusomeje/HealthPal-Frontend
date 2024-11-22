@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthPal Dashboard</title>
+    <link rel="stylesheet" href="./Assets/styles/create.css" />
+    <link rel="stylesheet" href="./Assets/styles/dashboard.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">HealthPal</div>
+        <button class="navbar-toggle" id="navbarToggle">☰</button>
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="/dashboard.html" id="dashboard">Dashboard</a></li>
+          <li><a href="/create.html" id="createDrug" class="active">Create a Drug</a></li>
+          <li>Welcome, <span id="userName">John Doe</span></li>
+          <li><button id="logoutButton">Logout</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Create a New Drug</h1>
+      <form id="drugForm" class="drug-form">
+        <div class="form-group">
+          <label for="drugName">Drug Name:</label>
+          <input
+            type="text"
+            id="drugName"
+            name="name"
+            placeholder="Enter drug name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Enter drug description"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="expiryDate">Expiry Date:</label>
+          <input type="date" id="expiryDate" name="expiryDate" required />
+        </div>
+        <div class="form-group">
+          <label for="manufacturingDate">Manufacturing Date:</label>
+          <input
+            type="date"
+            id="manufacturingDate"
+            name="manufacturingDate"
+            required
+          />
+        </div>
+        <button type="submit" id="submitBtn" class="submit-btn">
+          Create Drug
+        </button>
+      </form>
+    </div>
+    <script src="./Assets/scripts/sweetalert2@11.js"></script>
+    <script src="./Assets/scripts/axios.min.js"></script>
+    <script src="./Assets/scripts/create.js"></script>
+  </body>
+</html>

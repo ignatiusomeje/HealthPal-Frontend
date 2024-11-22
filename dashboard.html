@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./Assets/styles/dashboard.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">HealthPal</div>
+        <button class="navbar-toggle" id="navbarToggle">☰</button>
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="/dashboard.html" id="dashboard" class="active">Dashboard</a></li>
+          <li><a href="/create.html" id="createDrug">Create a Drug</a></li>
+          <li>Welcome, <span id="userName"></span></li>
+          <li><button id="logoutButton">Logout</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>HealthPal Dashboard</h1>
+      <!-- <canvas id="qr-code"></canvas> -->
+      <canvas id="qr-code" style="display: none;"></canvas>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Expiry Date</th>
+              <th>Manufacturing Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./Assets/scripts/axios.min.js"></script>
+    <!-- <script src="./Assets/scripts/Generateqrcode.min.js"></script> -->
+    <script src="./Assets/scripts/qrious.min.js"></script>
+    <script src="./Assets/scripts/dashboard.js"></script>
+  </body>
+</html>

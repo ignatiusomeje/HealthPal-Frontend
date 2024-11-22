@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthPal Login</title>
+    <link rel="stylesheet" href="Assets/styles/sweetalert2.min.css" />
+    <link rel="stylesheet" href="Assets/styles/user.css" />
+  </head>
+  <body>
+    <div class="backDrop">
+      <div class="loginCard">
+        <form action="" id="login-form">
+          <fieldset id="loginFieldset">
+            <legend id="loginLegend">Log in</legend>
+            <div id="emailField" class="field-ctrl">
+              <label for="email/userName" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" required />
+            </div>
+
+            <div id="passwordField" class="field-ctrl">
+              <span class="toggle-password">
+                <label for="password" class="form-label">Password</label>
+                <img
+                  src="Assets/images/icons8_hide_1.svg"
+                  alt=""
+                  id="toggleIcon"
+                />
+              </span>
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                required
+                id="password"
+              />
+            </div>
+
+            <div class="control">
+              <button type="submit" id="submit-btn" class="primary-btn">
+                Log in
+              </button>
+
+              <span class="return-nav">
+                <img
+                  src="Assets/images/icons8_left_2.svg"
+                  alt="Left arrow"
+                  id="returnIcon"
+                />
+                <!-- <p class="no-account">
+                  Don't have an account?
+                  <a href="signin.html" id="create-account">Create account</a>
+                </p> -->
+              </span>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="./Assets/scripts/sweetalert2@11.js"></script>
+    <script src="./Assets/scripts/axios.min.js"></script>
+    <script src="Assets/scripts/index.js"></script>
+  </body>
+</html>
