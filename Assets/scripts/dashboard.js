@@ -38,7 +38,8 @@ async function fetchAllDrugs(token) {
   const tableBody = document.querySelector("tbody");
   tableBody.textContent = "Loading...";
   const api = axios.create({
-    baseURL: `https://7l7wjdmm-3001.euw.devtunnels.ms/api/v1/`,
+    // baseURL: `https://7l7wjdmm-3001.euw.devtunnels.ms/api/v1/`,
+    baseURL: `https://healthpal-61m8.onrender.com/api/v1/`,
     // baseURL: `http://localhost:3001/api/v1/`,
   });
 

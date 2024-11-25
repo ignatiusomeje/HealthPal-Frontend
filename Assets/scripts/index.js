@@ -11,7 +11,8 @@ returnIcon?.addEventListener("click", ()=>{
 
 const api = axios.create({
   // baseURL: `http://localhost:3001/api/v1/`,
-  baseURL: `https://7l7wjdmm-3001.euw.devtunnels.ms/api/v1/`,
+  // baseURL: `https://7l7wjdmm-3001.euw.devtunnels.ms/api/v1/`,
+  baseURL: `https://healthpal-61m8.onrender.com/api/v1/`,
 });
 
 const submitBtn = document.getElementById("submit-btn");
